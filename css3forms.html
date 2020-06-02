@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A complete WebPage</title>
+		<style>
+			form{
+				background : #f1f1f1;
+				width:900px;
+				font-family: arial;
+				margin: 0 auto;
+				padding : 20px;
+				box-sizing: border-box;
+			}
+		.form-group label{
+				font-size: 20px;
+		}
+		.form-group{
+			margin: 10px;
+		}
+		.form-group input{
+				width: 100%;
+				display: block;
+				padding: 10px;
+				box-sizing: border-box;
+				box-shadow: inset 0px 0px 15px silver, 0px 0px 0px green;
+				border : 2px solid grey;
+				outline: none;
+				margin-top: 5px; 
+		}
+		.form-group input:focus{
+			box-shadow: inset 0px 0px 0px silver, inset 0px 0px 5px green
+		}
+
+		</style>
+	</head>
+	<body>
+		<form>
+			<h1>The Form</h1>
+			<hr>
+			<div class="form-group">
+				<label for="user-name">UserName *</label>
+				<input type="text" id="user-name" placeholder="Enter your Name" required autofocus>
+			</div>
+			<div class="form-group">
+				<label for="pass">Password *</label>
+				<input type="password" placeholder="Enter your Name" id="pass" required>
+			</div>
+			<div class="form-group">
+				<label for="Email">E-Mai *</label>
+				<input type="email" placeholder="Enter your Name" id="Email" required>
+			</div>
+			<div class="form-group">
+				<label for="contact">Contact Number</label>
+				<input type="number" id="contact" placeholder="Enter your Name">
+			</div>
+			<div class="form-group">
+				<label for="bday">Birthday</label>
+				<input type="date" id="bday">
+			</div>
+			<div class="form-group">
+				<label for="week">Week</label>
+				<input type="week" id="week">
+			</div>
+			<div class="form-group">
+				<label for="month">Month</label>
+				<input type="month" id="month">
+			</div>
+			<div class="form-group">
+				<label for="time">Time</label>
+				<input type="time" id="time">
+			</div>
+			<div class="form-group">
+				<label for="link">Instagram *</label>
+				<input type="url"placeholder="Enter your  Instagram UserName" id="link" required>
+			</div>
+			<div class="form-group">
+				<label for="city">City</label>
+				<input list="city" placeholder="Enter your City Name"> 
+				<datalist id="city">
+					<option>Khurja</option>
+					<option>Ghaziabad</option>
+					<option>Firojabad</option>
+					<option>Meerut</option>
+					<option>Delhi</option>
+					<option>Ayodhya</option>
+					<option>Aligarh</option>
+					<option>Azamgarh</option>
+					<option>Lucknow</option>
+					<option>Itarsi</option>
+					<option>Moradabad</option>
+					<option>Prayagraj</option>
+				</datalist>
+			</div>
+
+			<div class="form-group">
+				<input type="submit">
+			</div>
+		</form>
+
+			
+	</body>
+</html>
